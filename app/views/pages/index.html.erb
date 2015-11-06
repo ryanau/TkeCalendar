@@ -1,2 +1,26 @@
-<h1>Order TKE Nu Chapter Calendar Here!</h1>
-<a href="/charges/new" class="button">Default Button</a>
+<h1>Ordering Info</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th width="100">Name</th>
+      <th width="150">Email</th>
+      <th width="250">Address</th>
+      <th width="100">Zip</th>
+      <th width="50">State</th>
+      <th width="150">City</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<% @infos.each do |info| %>
+    <tr>
+      <td><%= info.name %></td>
+      <td><%= info.email %></td>
+      <td><%= info.address %></td>
+      <td><%= info.city %></td>
+      <td><%= info.state %></td>
+      <td><%= info.zip %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

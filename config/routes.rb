@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   resources :charges
-  root to: 'pages#index'
+  resources :pages
+  root to: 'charges#new'
 end
